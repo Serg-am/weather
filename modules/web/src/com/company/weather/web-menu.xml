@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<menu-config xmlns="http://schemas.haulmont.com/cuba/menu.xsd">
+    <menu id="application-weather" insertBefore="administration" caption="mainMsg://menu_config.application-weather">
+        <item screen="weather_WeatherForecast" caption="mainMsg://menu_config.weather_WeatherForecast"/>
+    </menu>
+</menu-config>
