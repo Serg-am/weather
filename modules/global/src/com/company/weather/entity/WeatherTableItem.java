@@ -9,12 +9,19 @@ import javax.persistence.*;
 @Table(name = "WEATHER_WEATHER_TABLE_ITEM")
 @Entity(name = "weather_WeatherTableItem")
 public class WeatherTableItem extends BaseUuidEntity {
+
+
     @Id
     @GeneratedValue(generator = "weather_WeatherTableItemSeq")
     @SequenceGenerator(name = "weather_WeatherTableItemSeq", sequenceName = "WEATHER_WEATHER_TABLE_ITEM_SEQ")
     @Column(name = "ID", nullable = false)
     protected int id;
-    @Column(name = "DATETIME_")
+
+
+    @Column(name = "CITY")
+    protected String city;
+
+    @Column(name = "DATETIME")
     protected String dateTime;
 
     @Column(name = "TEMPERATURE")
@@ -37,6 +44,15 @@ public class WeatherTableItem extends BaseUuidEntity {
 
     @Column(name = "WIND_DIRECTION")
     protected String windDirection;
+
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
 
     public void setDateTime(String dateTime) {
         this.dateTime = dateTime;

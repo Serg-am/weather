@@ -16,6 +16,7 @@
                width="100%">
             <columns>
                 <!-- Определение колонок таблицы -->
+                <column id="city" caption="Город"/>
                 <column id="dateTime" caption="Дата и время"/>
                 <column id="temperature" caption="Температура"/>
                 <column id="feelsLike" caption="Ощущаемая температура"/>
