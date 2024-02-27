@@ -12,6 +12,7 @@ public class WeatherTableItemServiceBean implements WeatherTableItemService {
     @Inject
     private DataManager dataManager;
 
+
     @Override
     public void saveWeatherItem(WeatherTableItem weatherItem) {
         dataManager.commit(weatherItem);

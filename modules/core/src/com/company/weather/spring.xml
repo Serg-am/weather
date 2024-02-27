@@ -5,6 +5,6 @@
     <!-- Annotation-based beans -->
     <context:component-scan base-package="com.company.weather"/>
     <bean id="weather_WeatherTableItemService"
-          class="com.company.weather.service.WeatherTableItemServiceBean"/>
+          class="com.company.weather.WeatherTableItemServiceBean"/>
 
 </beans>
